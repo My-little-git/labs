@@ -10,9 +10,16 @@ class PostController extends Controller
     public function updatePost(Request $req){
         Post::where('id', $req->input('id'))->update(array(
             'title' => $req->input('title'),
-            'text' => $req->input('text'),
+            'message' => $req->input('message'),
         ));
         return redirect()->route('lab_one');
+    }
+
+    public function showPost($id){
+        return view('edit_post', [
+            'post' => Post::find($id)
+        ]);
+        dd($id);
     }
 
     public function deletePost($id){

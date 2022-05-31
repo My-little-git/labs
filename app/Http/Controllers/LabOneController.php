@@ -16,7 +16,7 @@ class LabOneController extends Controller
 
     public function getData(Request $req){
         Comment::insert(array(
-            'name' => $req->input('name'),
+            'user_id' => $req->input('user_id'),
             'text' => $req->input('text'),
             'post_id' => $req->input('post_id')
         ));

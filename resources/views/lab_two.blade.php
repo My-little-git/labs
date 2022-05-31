@@ -13,7 +13,7 @@
       </div>
       <div class="mb-3">
         <label for="exapleFormControlTextarea1" class="form-label">Текст сообщения</label>
-        <textarea class="form-control" id="exapleFormControlTextarea1" rows="3" name="text"></textarea>
+        <textarea class="form-control" id="exapleFormControlTextarea1" rows="3" name="message"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Добавить</button>
       @csrf
